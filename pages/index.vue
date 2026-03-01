@@ -5,7 +5,7 @@
       <!-- Background gradient -->
       <div class="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950"></div>
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-foxen-900/20 via-transparent to-transparent"></div>
-      
+
       <div class="container-custom relative z-10">
         <div class="max-w-4xl">
           <h1 class="heading-1 mb-6">
@@ -33,10 +33,10 @@
         <div class="text-center mb-16">
           <h2 class="heading-2 mb-4">Why Foxen Digital?</h2>
           <p class="text-gray-400 max-w-2xl mx-auto">
-            We're not just developers—we're partners in your digital success. We believe great software should be accessible, maintainable, and built to last.
+            We're not just developers - we're partners in your digital success. We believe great software should be accessible, maintainable, and built to last.
           </p>
         </div>
-        
+
         <div class="grid md:grid-cols-3 gap-8">
           <div class="bg-gray-800/50 rounded-xl p-8 border border-gray-700/50">
             <div class="w-12 h-12 bg-foxen-500/10 rounded-lg flex items-center justify-center mb-4">
@@ -50,7 +50,7 @@
               Based in the UK, working with clients who value clear communication, reliable delivery, and a team that understands British business needs.
             </p>
           </div>
-          
+
           <div class="bg-gray-800/50 rounded-xl p-8 border border-gray-700/50">
             <div class="w-12 h-12 bg-foxen-500/10 rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-foxen-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,7 +62,7 @@
               We contribute to the open source community and build transparently where possible. Our code is clean, documented, and maintainable.
             </p>
           </div>
-          
+
           <div class="bg-gray-800/50 rounded-xl p-8 border border-gray-700/50">
             <div class="w-12 h-12 bg-foxen-500/10 rounded-lg flex items-center justify-center mb-4">
               <svg class="w-6 h-6 text-foxen-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -84,7 +84,7 @@
         <div class="text-center mb-16">
           <h2 class="heading-2 mb-4">What We Build</h2>
         </div>
-        
+
         <div class="grid md:grid-cols-2 gap-8">
           <div class="group p-8 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors">
             <h3 class="heading-3 mb-3 group-hover:text-foxen-400 transition-colors">Custom Web Applications</h3>
@@ -95,7 +95,7 @@
               Learn more →
             </NuxtLink>
           </div>
-          
+
           <div class="group p-8 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors">
             <h3 class="heading-3 mb-3 group-hover:text-foxen-400 transition-colors">Laravel Development</h3>
             <p class="text-gray-400 mb-4">
@@ -105,7 +105,7 @@
               Learn more →
             </NuxtLink>
           </div>
-          
+
           <div class="group p-8 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors">
             <h3 class="heading-3 mb-3 group-hover:text-foxen-400 transition-colors">Open Source Tools</h3>
             <p class="text-gray-400 mb-4">
@@ -115,14 +115,14 @@
               View packages →
             </NuxtLink>
           </div>
-          
+
           <div class="group p-8 rounded-xl border border-gray-800 hover:border-gray-700 transition-colors">
-            <h3 class="heading-3 mb-3 group-hover:text-foxen-400 transition-colors">Technical Consultancy</h3>
+            <h3 class="heading-3 mb-3 group-hover:text-foxen-400 transition-colors">Agentic Engineering</h3>
             <p class="text-gray-400 mb-4">
-              Need expert eyes on your project? We provide code reviews, architecture advice, and technical strategy sessions.
+                Leveraging AI-assisted development for faster delivery without compromising quality. Modern workflows, intelligent tooling.
             </p>
-            <NuxtLink to="/contact" class="text-foxen-400 hover:text-foxen-300 text-sm font-medium">
-              Get in touch →
+            <NuxtLink to="/services" class="text-foxen-400 hover:text-foxen-300 text-sm font-medium">
+                Learn more →
             </NuxtLink>
           </div>
         </div>
@@ -137,27 +137,33 @@
             <span class="text-foxen-400 text-sm font-medium mb-4 block">Featured Project</span>
             <h2 class="heading-2 mb-4">NutriPlan</h2>
             <p class="text-gray-400 text-lg mb-6">
-              A smarter approach to meal planning and nutrition tracking—built to demonstrate what modern, quality-focused development looks like in practice.
+                A smarter approach to meal planning. Most meal planners assume one meal = one day. NutriPlan doesn't.
             </p>
-            
+
             <div class="space-y-4 mb-8">
               <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-foxen-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <p class="text-gray-300">UK-first approach with British food databases</p>
+                <p class="text-gray-300"> Recipes have serving amounts - add them to your plan multiple times</p>
               </div>
               <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-foxen-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <p class="text-gray-300">Blood glucose and lipid profile tracking built in</p>
+                <p class="text-gray-300">First instance = "to cook", subsequent = planned leftovers</p>
               </div>
               <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-foxen-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <p class="text-gray-300">No ads, no tracking, full data ownership</p>
+                <p class="text-gray-300">Shopping lists consolidate ingredients from "to cook" meals only</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-foxen-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <p class="text-gray-300"> No more over-buying, no more food waste </p>
               </div>
               <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 text-foxen-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -166,17 +172,17 @@
                 <p class="text-gray-300">Open source and self-hostable</p>
               </div>
             </div>
-            
+
             <div class="flex gap-4">
               <NuxtLink to="/projects/nutriplan" class="btn-primary">
-                Explore NutriPlan
+                Explore NutriPlan →
               </NuxtLink>
               <a href="https://github.com/MrKareth/nutriplan" target="_blank" class="btn-secondary">
                 View on GitHub
               </a>
             </div>
           </div>
-          
+
           <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">
             <!-- Placeholder for screenshot -->
             <div class="aspect-video bg-gray-900 rounded-lg flex items-center justify-center text-gray-500">

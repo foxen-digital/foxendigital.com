@@ -7,30 +7,30 @@
           <span class="text-foxen-500">Foxen</span>
           <span class="text-gray-300">Digital</span>
         </NuxtLink>
-        
+
         <!-- Desktop Navigation -->
         <div class="hidden md:flex items-center gap-8">
-          <NuxtLink 
-            v-for="link in navLinks" 
+          <NuxtLink
+            v-for="link in navLinks"
             :key="link.href"
-            :to="link.href" 
+            :to="link.href"
             class="text-gray-400 hover:text-white transition-colors text-sm font-medium"
             :class="{ 'text-white': route.path === link.href }"
           >
             {{ link.label }}
           </NuxtLink>
         </div>
-        
+
         <!-- CTA Button -->
         <div class="hidden md:block">
           <NuxtLink to="/contact" class="btn-primary text-sm">
-            Start a Project
+              Get in Touch
           </NuxtLink>
         </div>
-        
+
         <!-- Mobile menu button -->
-        <button 
-          @click="mobileMenuOpen = !mobileMenuOpen" 
+        <button
+          @click="mobileMenuOpen = !mobileMenuOpen"
           class="md:hidden p-2 text-gray-400 hover:text-white"
         >
           <svg v-if="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -41,21 +41,21 @@
           </svg>
         </button>
       </div>
-      
+
       <!-- Mobile Navigation -->
       <div v-if="mobileMenuOpen" class="md:hidden py-4 border-t border-gray-800">
         <div class="flex flex-col gap-4">
-          <NuxtLink 
-            v-for="link in navLinks" 
+          <NuxtLink
+            v-for="link in navLinks"
             :key="link.href"
-            :to="link.href" 
+            :to="link.href"
             class="text-gray-400 hover:text-white transition-colors font-medium"
             @click="mobileMenuOpen = false"
           >
             {{ link.label }}
           </NuxtLink>
           <NuxtLink to="/contact" class="btn-primary text-center mt-2" @click="mobileMenuOpen = false">
-            Start a Project
+              Get in Touch
           </NuxtLink>
         </div>
       </div>

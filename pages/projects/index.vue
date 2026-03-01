@@ -5,7 +5,7 @@
         <div class="max-w-3xl mb-16">
           <h1 class="heading-1 mb-6">Projects</h1>
           <p class="text-xl text-gray-400">
-            A selection of our work, including client projects and open source contributions.
+              Explore our portfolio of web applications and open source tools. Each project showcases our commitment to quality, modern technology, and solving real problems.
           </p>
         </div>
 
@@ -21,17 +21,17 @@
               <span class="text-foxen-400 text-sm font-medium">Featured Project</span>
               <h2 class="heading-2 mt-2 mb-4">NutriPlan</h2>
               <p class="text-gray-400 mb-4">
-                A smarter approach to meal planning and nutrition tracking, designed with UK users in mind. Built to demonstrate what modern, quality-focused development looks like.
+                  A smarter approach to meal planning. Handles batch cooking, meal prep, and leftovers properly—unlike other meal planners.
               </p>
               <div class="flex flex-wrap gap-2 mb-6">
                 <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-400">Laravel</span>
-                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-400">Livewire</span>
-                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-400">Tailwind CSS</span>
+                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-400">Inertia.js</span>
+                <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-400">Vue.js</span>
                 <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-400">PostgreSQL</span>
               </div>
               <div class="flex gap-4">
                 <NuxtLink to="/projects/nutriplan" class="btn-primary">
-                  View Details
+                    Learn More
                 </NuxtLink>
                 <a href="https://github.com/MrKareth/nutriplan" target="_blank" class="btn-secondary">
                   GitHub
@@ -46,7 +46,7 @@
               <span class="text-foxen-400 text-sm font-medium">Internal Tool</span>
               <h2 class="heading-2 mt-2 mb-4">Habit Tracker</h2>
               <p class="text-gray-400 mb-4">
-                A personal habit tracking application built to monitor health and fitness goals. Features weight tracking, walking logs, water intake, and mood tracking with visualisations.
+                  Personal health tracking mini-app with custom daily goals, streak tracking, and progress visualization.
               </p>
               <div class="flex flex-wrap gap-2 mb-6">
                 <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-400">Laravel</span>
@@ -54,7 +54,7 @@
                 <span class="px-3 py-1 bg-gray-800 rounded-full text-sm text-gray-400">Tailwind CSS</span>
               </div>
               <div class="flex gap-4">
-                <a href="https://github.com/MrKareth/habit-tracker" target="_blank" class="btn-secondary">
+                <a href="https://github.com/foxen-digital/habit-tracker" target="_blank" class="btn-secondary">
                   GitHub
                 </a>
               </div>

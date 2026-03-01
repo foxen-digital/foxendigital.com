@@ -13,7 +13,7 @@
         <div class="bg-gray-800/30 rounded-xl p-8 border border-gray-700/50 mb-16">
           <h2 class="heading-2 mb-4">Our Open Source Philosophy</h2>
           <p class="text-gray-400">
-            Whether it's releasing useful packages, contributing to existing projects, or sharing knowledge through blog posts and tutorials—we believe in building in the open. Quality code should be accessible, and we're committed to making that happen.
+            Whether it's releasing useful packages, contributing to existing projects, or sharing knowledge through blog posts and tutorials - we believe in building in the open. Quality code should be accessible, and we're committed to making that happen.
           </p>
         </div>
 
@@ -31,7 +31,7 @@
               Browse all Foxen Digital packages and contributions on our GitHub organisation.
             </p>
           </a>
-          
+
           <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700/50 border-dashed">
             <div class="flex items-center gap-3 mb-3">
               <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -57,7 +57,7 @@
               View on GitHub →
             </a>
           </div>
-          
+
           <div class="bg-gray-800/50 rounded-xl p-6 border border-gray-700/50">
             <h3 class="font-semibold mb-2">Habit Tracker</h3>
             <p class="text-gray-400 text-sm mb-4">
