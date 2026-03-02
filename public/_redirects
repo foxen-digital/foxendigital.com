@@ -1,0 +1,6 @@
+# Redirect apex to www
+https://foxendigital.com/* https://www.foxendigital.com/:splat 301
+
+# Redirect .co.uk to .com
+https://foxendigital.co.uk/* https://www.foxendigital.com/:splat 301
+https://www.foxendigital.co.uk/* https://www.foxendigital.com/:splat 301
