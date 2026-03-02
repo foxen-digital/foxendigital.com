@@ -28,7 +28,7 @@ export default defineNuxtConfig({
             "We build bespoke web applications and open source tools for businesses that value quality, transparency, and results.",
         },
         { property: "og:type", content: "website" },
-        { property: "og:url", content: "https://foxendigital.com" },
+        { property: "og:url", content: "https://www.foxendigital.com" },
         { name: "twitter:card", content: "summary_large_image" },
       ],
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
@@ -41,6 +41,6 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
 
   site: {
-    url: "https://foxendigital.com",
+    url: "https://www.foxendigital.com",
   },
 });
