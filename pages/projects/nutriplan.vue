@@ -18,7 +18,7 @@
 
         <!-- Screenshot -->
         <div class="bg-gray-800 rounded-xl p-4 border border-gray-700 mb-12">
-          <img src="/img/recipes-ipad.png" alt="NutriPlan recipe view">
+          <img class="rounded-xl" src="/img/nutriplan.png" alt="NutriPlan recipe view">
         </div>
 
         <!-- Content -->

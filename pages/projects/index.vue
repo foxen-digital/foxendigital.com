@@ -14,7 +14,7 @@
           <div class="grid lg:grid-cols-2 gap-8 items-center">
             <div class="bg-gray-800 rounded-xl p-4 border border-gray-700">
               <div class="aspect-video bg-gray-900 rounded-lg flex items-center justify-center text-gray-500">
-                NutriPlan Screenshot
+                <img class="rounded-lg" src="/img/nutriplan.png" alt="NutriPlan recipe view">
               </div>
             </div>
             <div>
