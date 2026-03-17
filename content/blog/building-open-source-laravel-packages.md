@@ -1,17 +1,16 @@
 ---
 title: "Building Open Source Laravel Packages: A Practical Guide"
 description: "Why we open source our work, how we build packages, and what we've learned along the way"
+image: "/img/blog/building-open-source-laravel-packages.png"
 publishedAt: 2026-03-03
-category: content
+featured: true
+category: Guide
 author: Kareth
 tags:
   - laravel
   - package
 ---
 
-# Building Open Source Laravel Packages: A Practical Guide
-
-*Why we open source our work, how we build packages, and what we've learned along the way*
 
 ---
 
