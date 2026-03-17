@@ -11,17 +11,26 @@
         </div>
 
         <!-- Blog Posts Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Placeholder posts -->
+        <div v-if="posts && posts.length > 0" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <article
             v-for="post in posts"
+            :key="post.stem"
             class="bg-gray-800/50 rounded-xl border border-gray-700/50 overflow-hidden group"
           >
-            <div
-              class="aspect-video bg-gray-700/50 flex items-center justify-center text-gray-500"
-            >
-              Blog Image
-            </div>
+            <NuxtLink :to="`/blog/${post.stem.replace('blog/', '')}`">
+              <div
+                v-if="post.image"
+                class="aspect-video bg-gray-700/50 overflow-hidden"
+              >
+                <img :src="post.image" :alt="post.title" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+              </div>
+              <div
+                v-else
+                class="aspect-video bg-gradient-to-br from-foxen-900/50 to-gray-700/50 flex items-center justify-center"
+              >
+                <span class="text-foxen-400/50 text-sm font-medium">{{ post.category }}</span>
+              </div>
+            </NuxtLink>
             <div class="p-6">
               <span class="text-foxen-400 text-sm font-medium">
                 {{ post.category }}
@@ -29,16 +38,23 @@
               <h2
                 class="font-semibold text-lg mt-2 group-hover:text-foxen-400 transition-colors"
               >
-                <a :href="post.link || '#'">{{ post.title }}</a>
+                <NuxtLink :to="`/blog/${post.stem.replace('blog/', '')}`">
+                  {{ post.title }}
+                </NuxtLink>
               </h2>
               <p class="text-gray-400 text-sm mt-2">
-                {{ post.teaser }}
+                {{ post.description }}
               </p>
               <p class="text-foxen-200 text-xs mt-3 text-right">
-                {{ post.published || "Coming Soon" }}
+                {{ formatDate(post.publishedAt) }}
               </p>
             </div>
           </article>
+        </div>
+
+        <!-- Empty State -->
+        <div v-else class="text-center py-16">
+          <p class="text-gray-400">No posts found.</p>
         </div>
 
         <!-- Newsletter -->
@@ -70,45 +86,19 @@ useHead({
   title: "Blog | Foxen Digital",
 });
 
-const posts = [
-  {
-    category: "Laravel",
-    title: "Why We Chose Laravel for Everything",
-    teaser:
-      "The rationale behind our Laravel-first approach and why it delivers better results for clients.",
-    link: null,
-    published: null,
-  },
-  {
-    category: "Open Source",
-    title: "Building NutriPlan in the Open",
-    teaser:
-      "The journey of building a meal planning app that handles leftovers properly—and why open source matters.",
-    link: null,
-    published: null,
-  },
-  {
-    category: "Business",
-    title: "The Real Cost of Cheap Development",
-    teaser: "TWhy investing in quality development pays off in the long run.",
-    link: null,
-    published: null,
-  },
-  {
-    category: "Agentic Engineering",
-    title: "Building AI-Powered Development Workflows",
-    teaser:
-      "How we integrate AI assistants into Laravel and Vue development workflows for faster, higher-quality delivery.",
-    link: null,
-    published: null,
-  },
-  {
-    category: "Rapid Prototyping",
-    title: "From Idea to Deployed App in 4 Hours",
-    teaser:
-      "How we built the Habit Tracker in a single day and what it teaches about rapid development.",
-    link: null,
-    published: null,
-  },
-];
+const { data: posts } = await useAsyncData('blog-posts', () =>
+  queryCollection('blog')
+    .order('publishedAt', 'DESC')
+    .all()
+);
+
+function formatDate(dateStr: string | undefined): string {
+  if (!dateStr) return 'Coming Soon';
+  const date = new Date(dateStr);
+  return date.toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+}
 </script>

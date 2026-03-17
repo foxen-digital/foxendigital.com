@@ -24,3 +24,6 @@ logs
 
 # TypeScript
 *.tsbuildinfo
+
+# Nuxt Content
+.data/
