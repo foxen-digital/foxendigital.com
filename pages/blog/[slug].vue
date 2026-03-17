@@ -1,6 +1,7 @@
 <template>
   <div class="pt-16">
-    <article v-if="post" class="section-padding">
+    <!-- Published Post -->
+    <article v-if="post && isPostPublished" class="section-padding">
       <div class="container-custom">
         <div class="flex gap-12">
           <!-- Main Content -->
@@ -109,6 +110,19 @@
       </div>
     </article>
 
+    <!-- Coming Soon (post exists but not published) -->
+    <div v-else-if="post && !isPostPublished" class="section-padding">
+      <div class="container-custom max-w-3xl text-center">
+        <span class="text-foxen-400 text-sm font-medium mb-4 block">{{ post.category }}</span>
+        <h1 class="heading-1 mb-4">{{ post.title }}</h1>
+        <p class="text-gray-400 mb-6">{{ post.description }}</p>
+        <p class="text-gray-500 italic mb-8">This post is coming soon. Check back later!</p>
+        <NuxtLink to="/blog" class="btn-primary">
+          Back to Blog
+        </NuxtLink>
+      </div>
+    </div>
+
     <!-- Not Found -->
     <div v-else class="section-padding">
       <div class="container-custom max-w-3xl text-center">
@@ -123,7 +137,7 @@
 </template>
 
 <script setup lang="ts">
-import { formatDate } from '~/utils/blog';
+import { formatDate, isPublished } from '~/utils/blog';
 
 const route = useRoute();
 const slug = route.params.slug as string;
@@ -133,6 +147,12 @@ const { data: post } = await useAsyncData(`blog-${slug}`, () =>
     .where('stem', '=', `blog/${slug}`)
     .first()
 );
+
+// Check if post is published
+const isPostPublished = computed(() => {
+  if (!post.value) return false;
+  return isPublished(post.value.publishedAt);
+});
 
 const { data: allPosts } = await useAsyncData('blog-posts-for-related', () =>
   queryCollection('blog')
